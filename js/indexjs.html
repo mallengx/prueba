@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+display: grid;
+grid-template-columns: 210px 210px 210px 210px;
+grid-template-rows: 250px 250px 250px 250px;
+grid-gap: 5px;
+grid-template-areas: 
+"a b c c"
+"a d e f"
+"g d h h";
+
+
+}
+.agua{
+
+grid-area: g;
+
+}
+.casa {
+
+grid-area: b;
+}
+.escalera {
+
+grid-area: f;
+}
+.puente{
+    grid-area: c;  
+    
+}
+.puente>img{
+    object-fit: cover;
+    width: 100%;
+    
+}
+.flor {
+grid-area: e;
+
+}
+.pareja {
+grid-area: a;
+
+}
+.pareja>img{ object-fit: cover;
+
+    height: 100%; }
+.rocas {
+
+grid-area:h;
+
+}
+.rocas>img{ object-fit: cover;
+    width: 100%;}
+.ventana {
+
+grid-area: d;
+}
+.ventana>img{ object-fit: cover;
+
+height: 90%; }
+.img {height: 200px;
+width: 200px;
+border-radius: 10%;}
+body {  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(116,0,0,1) 72%, rgba(170,0,0,1) 92%);}
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="agua"><img src="agua.png" alt=""  class="img"></div>
+        <div class="casa"><img src="casa.jpg" alt=""  class="img"></div>
+        <div class="escalera"><img src="escalera.jpg" alt=""  class="img"></div>
+        <div class="flor"><img src="flor.jpg" alt=""  class="img"></div>
+        <div class="pareja"><img src="pareja.jpg" alt="" class="img" ></div>
+        <div class="puente"><img src="puente.jpg" alt=""  class="img"></div>
+        <div class="rocas"><img src="rocas.jpg" alt=""  class="img"></div>
+        <div class="ventana"><img src="ventana.jpg" alt=""  class="img"></div>
+        </div>
+        
+</body>
+</html>
